@@ -72,10 +72,47 @@ export const Content = styled.div`
     justify-content: initial;
     width: 920px;
     height: 507px;
-    padding-top: 6.2rem;
+    padding-top: 0rem;
 
     .image{
       width: 460px;
+
+      .illustration{
+        display: block;
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        .boxContent{
+          position: absolute;
+          z-index: 6;
+          left: -9.3rem;
+          top: 14.1rem;
+          margin-top: 6.2rem;
+        }
+        .contentOverflowHidden{
+          overflow: hidden;
+          position: relative;
+          height: 507px;
+
+          .desktop-illustration{
+            position: relative;
+            margin-top: 0.5rem;
+            margin-left: -8.3rem;
+            z-index: 3;
+            margin-top: 6.8rem;
+          }
+
+          .shadow{
+            position: absolute;
+            top: -29.8rem;
+            right: 0rem;
+            width: 250%;
+            z-index: 1;
+          }
+
+        }
+      }
     }
 
     .faqContent{
@@ -85,7 +122,7 @@ export const Content = styled.div`
       h1 {
       font-size: 3.2em;
       line-height: 3.6rem;
-      margin-top: 0.2rem;
+      margin-top: 6.4rem;
       margin-bottom: 3.9rem;
     }
     }

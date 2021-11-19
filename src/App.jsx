@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 
 // # My components from styled-components
@@ -9,6 +10,11 @@ import { Accordion } from './components/Accordion/index.jsx';
 
 // # mobile images
 import mobileIllustration from './assets/images/img-mobile.svg';
+
+// # desktop images
+import box from './assets/images/illustration-box-desktop.svg';
+import desktopIllustatrion from './assets/images/illustration-woman-online-desktop.svg';
+import shadow from './assets/images/bg-pattern-desktop.svg';
 
 // # data, faq question and answer
 import { faqs } from './faqs';
@@ -38,7 +44,23 @@ function App() {
           <div className="image">
             <div className="illustration">
               {screenSize > 1200 ? (
-                console.log('maior')
+                <>
+                  <div className="boxContent">
+                    <img src={box} alt="red box illustration" />
+                  </div>
+                  <div className="contentOverflowHidden">
+                    <img
+                      src={desktopIllustatrion}
+                      alt="illustration - woman looking at a screen"
+                      className="desktop-illustration"
+                    />
+                    <img
+                      src={shadow}
+                      alt="illustration - shadow"
+                      className="shadow"
+                    />
+                  </div>
+                </>
               ) : (
                 <img
                   src={mobileIllustration}
