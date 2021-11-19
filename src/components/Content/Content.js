@@ -12,10 +12,20 @@ export const Content = styled.div`
   align-items: center;
   height: 53.5rem;
 
-  .mobile-illustration {
-    margin-top: -10.8rem;
-    margin-left: 0.2rem;
-    margin-bottom: 2.5rem;
+  .image {
+    width: 24rem;
+    height: 12rem;
+    position: relative;
+    margin-bottom: 1.2rem;
+  }
+
+  .illustration {
+    .mobile-illustration {
+      position: absolute;
+      top: -10.8rem;
+      right: 0;
+      margin-left: 0.2rem;
+    }
   }
 
   .faqContet {
@@ -33,6 +43,12 @@ export const Content = styled.div`
 
       margin-bottom: 3.4rem;
       margin-left: 0.1rem;
+    }
+  }
+
+  @media (min-width: 375px) {
+    .mobile-illustration {
+      /* margin-top: -10.8rem; */
     }
   }
 `;

@@ -34,12 +34,14 @@ function App() {
       <GlobalStyle />
       <Conteiner>
         <Content onClick={() => setFaqId(null)}>
-          <div>
-            <img
-              src={mobileIllustration}
-              alt="illustration - Woman looking at a screen"
-              className="mobile-illustration"
-            />
+          <div className="image">
+            <div className="illustration">
+              <img
+                src={mobileIllustration}
+                alt="illustration - Woman looking at a screen"
+                className="mobile-illustration"
+              />
+            </div>
           </div>
           <div className="faqContet">
             <h1>FAQ</h1>
