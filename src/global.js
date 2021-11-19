@@ -42,4 +42,10 @@ export const Conteiner = styled.div`
   padding-top: 14.8rem;
   display: flex;
   justify-content: center;
+
+  @media(min-width: 1200px) {
+    padding-top: 13rem;
+    padding-left: 4rem;
+    }
+  }
 `;

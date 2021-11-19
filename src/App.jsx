@@ -14,6 +14,7 @@ import mobileIllustration from './assets/images/img-mobile.svg';
 import { faqs } from './faqs';
 
 function App() {
+  const screenSize = window.screen.width;
   const [faqId, setFaqId] = useState(1);
 
   // @ Ao tentar passar a propriedade key, ocorre erro, ela é apenas uma marca de unidade para
@@ -36,14 +37,18 @@ function App() {
         <Content onClick={() => setFaqId(null)}>
           <div className="image">
             <div className="illustration">
-              <img
-                src={mobileIllustration}
-                alt="illustration - Woman looking at a screen"
-                className="mobile-illustration"
-              />
+              {screenSize > 1200 ? (
+                console.log('maior')
+              ) : (
+                <img
+                  src={mobileIllustration}
+                  alt="illustration - Woman looking at a screen"
+                  className="mobile-illustration"
+                />
+              )}
             </div>
           </div>
-          <div className="faqContet">
+          <div className="faqContent">
             <h1>FAQ</h1>
             {/* <Accordion question={faqs[1].q} answer={faqs[1].a} /> */}
             {Accordions}

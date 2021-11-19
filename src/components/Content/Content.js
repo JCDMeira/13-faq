@@ -28,7 +28,7 @@ export const Content = styled.div`
     }
   }
 
-  .faqContet {
+  .faqContent {
     width: 74.93333333333332vw;
     height: 35.7rem;
     display: flex;
@@ -53,7 +53,7 @@ export const Content = styled.div`
     margin-bottom: 1.2rem;
   }
 
-    .faqContet {
+    .faqContent {
     width: 28.1rem;
     height: 35.7rem;
 
@@ -64,5 +64,30 @@ export const Content = styled.div`
     }
     }
   }
+  }
+
+  @media(min-width: 1200px) {
+    flex-direction: row;
+    align-items: initial;
+    justify-content: initial;
+    width: 920px;
+    height: 507px;
+    padding-top: 6.2rem;
+
+    .image{
+      width: 460px;
+    }
+
+    .faqContent{
+      width: 460px;
+      align-items: flex-start;
+      padding-left: 1.5rem;
+      h1 {
+      font-size: 3.2em;
+      line-height: 3.6rem;
+      margin-top: 0.2rem;
+      margin-bottom: 3.9rem;
+    }
+    }
   }
 `;

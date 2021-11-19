@@ -51,4 +51,16 @@ export const AccordionContent = styled.div`
       line-height: 1.8rem;
     }
   }
+
+  @media (min-width: 1200px) {
+    width: 33.6rem;
+    font-size: 1.42rem;
+    padding-bottom: 1.6rem;
+
+    .answer {
+      /* overflow-wrap: break-word; */
+      font-size: 1.2rem;
+      padding-top: 0.9rem;
+    }
+  }
 `;
