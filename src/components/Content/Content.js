@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 export const Content = styled.div`
   width: 87.2vw;
-  height: 69.66145833333333vh; //535px de 768px
+  height: 69.66145833333333vh;
+  //535px de 768px
   border-radius: 2rem;
   background: #fff;
   box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.25);
@@ -10,13 +11,12 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 53.5rem;
 
   .image {
     width: 24rem;
     height: 12rem;
     position: relative;
-    margin-bottom: 1.2rem;
+    margin-bottom: 0rem;
   }
 
   .illustration {
@@ -29,26 +29,40 @@ export const Content = styled.div`
   }
 
   .faqContet {
-    width: 28.1rem;
+    width: 74.93333333333332vw;
     height: 35.7rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     h1 {
       font-weight: 700;
-      font-size: 3.2em;
-      line-height: 3.6rem;
+      font-size: 2.4em;
+      line-height: 2.6rem;
 
       color: #000000;
 
-      margin-bottom: 3.4rem;
+      margin-bottom: 1.5rem;
       margin-left: 0.1rem;
     }
   }
 
   @media (min-width: 375px) {
-    .mobile-illustration {
-      /* margin-top: -10.8rem; */
+    height: 69.66145833333333vh;
+    .image {
+    position: relative;
+    margin-bottom: 1.2rem;
+  }
+
+    .faqContet {
+    width: 28.1rem;
+    height: 35.7rem;
+
+    h1 {
+      font-size: 3.2em;
+      line-height: 3.6rem;
+      margin-bottom: 3.4rem;
     }
+    }
+  }
   }
 `;
