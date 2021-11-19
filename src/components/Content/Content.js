@@ -13,8 +13,9 @@ export const Content = styled.div`
   height: 53.5rem;
 
   .mobile-illustration {
-    margin-top: -11rem;
-    margin-bottom: 2.7rem;
+    margin-top: -10.8rem;
+    margin-left: 0.2rem;
+    margin-bottom: 2.5rem;
   }
 
   .faqContet {
@@ -25,12 +26,13 @@ export const Content = styled.div`
     align-items: center;
     h1 {
       font-weight: 700;
-      font-size: 3rem;
+      font-size: 3.2em;
       line-height: 3.6rem;
 
       color: #000000;
 
-      margin-bottom: 2.7rem;
+      margin-bottom: 3.4rem;
+      margin-left: 0.1rem;
     }
   }
 `;
