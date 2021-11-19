@@ -33,7 +33,7 @@ function App() {
     <>
       <GlobalStyle />
       <Conteiner>
-        <Content>
+        <Content onClick={() => setFaqId(null)}>
           <div>
             <img
               src={mobileIllustration}
