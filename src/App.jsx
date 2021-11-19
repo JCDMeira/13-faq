@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 
 // # My components from styled-components
@@ -15,18 +14,21 @@ import mobileIllustration from './assets/images/img-mobile.svg';
 import { faqs } from './faqs';
 
 function App() {
-  // const [faqId, setFaqId] = useState(null);
-  // const Accordions = faqs.map((faq, id) => (
-  //   <Accordion
-  //     question={faq.q}
-  //     asnser={faq.a}
-  //     key={id}
-  //     myId={id}
-  //     faqId={faqId}
-  //     setFaqId={setFaqId}
-  //   />
-  // ));
+  const [faqId, setFaqId] = useState(1);
 
+  // @ Ao tentar passar a propriedade key, ocorre erro, ela é apenas uma marca de unidade para
+  // @ o iteravel, garantindo que ele é realmente único. Portanto, key não é vista do outro lado
+  // @ no componente.
+  const Accordions = faqs.map((faq, index) => (
+    <Accordion
+      question={faq.q}
+      answer={faq.a}
+      key={index}
+      myId={index}
+      faqId={faqId}
+      setFaqId={setFaqId}
+    />
+  ));
   return (
     <>
       <GlobalStyle />
@@ -41,7 +43,8 @@ function App() {
           </div>
           <div className="faqContet">
             <h1>FAQ</h1>
-            <Accordion />
+            {/* <Accordion question={faqs[1].q} answer={faqs[1].a} /> */}
+            {Accordions}
           </div>
         </Content>
       </Conteiner>
