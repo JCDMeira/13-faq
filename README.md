@@ -42,14 +42,14 @@ Users should be able to:
 
 <p  align="center"><img width="720px" src="./presentation/desktop.png" align="center"></img></p>
 
-<!--### result of my work
+### result of my work
 
-<p  align="center"><img width="1080px" src="./presentation/design-x-myWork.gif" align="center"></img></p> -->
+<p  align="center"><img width="1080px" src="./presentation/design-x-myWork.gif" align="center"></img></p>
 
 ### Links
 
-<!-- - Solution URL: [My solution for this challenge](https://www.frontendmentor.io/solutions/single-price-grid-with-reactjs-YR5dhXAtZ)
-- Live Site URL: [check the result](https://jcdmeira-single-price.netlify.app) -->
+- Solution URL: [My solution for this challenge](https://www.frontendmentor.io/solutions/faq-accordion-component-with-reactjs-and-styled-components-Bz6tWSLqa)
+- Live Site URL: [check the result](https://jcdmeira-faq-accordion-component.netlify.app)
 
 - My figma design: [Figma](https://www.figma.com/file/6MY1RKdWQ1fpoErizJxd6V/13-faq?node-id=0%3A1)
 
